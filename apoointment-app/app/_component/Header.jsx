@@ -20,25 +20,7 @@ export default function Header() {
         { id: 3, name: "Contact Us", path: "#contactus" },
     ]
     const { user, isAuthenticated, } = useKindeBrowserClient();
-    useEffect(() => {
-        const sendWelcomeEmail = async () => {
-            try {
-                if (user?.email) {
-                    const res = await axios.post('/api/sendwelcomeemail', {
-                        email: user.email,
-                        name: user.given_name || 'مستخدم جديد',
-                    });
 
-                    console.log('تم إرسال البريد:', res.data);
-                }
-            } catch (error) {
-                console.error('خطأ أثناء إرسال البريد:', error.response?.data || error.message);
-            }
-        }
-        sendWelcomeEmail();
-
-
-    }, [user]);
     console.log(user);
 
     return (

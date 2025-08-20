@@ -1,17 +1,31 @@
-# Node
-node_modules
-npm-debug.log
-yarn-error.log
+# Node modules
+node_modules/
+**/node_modules/
 
-# Build
-.next
-dist
-build
+# Build outputs
+.next/
+build/
+dist/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
 # Env files
 .env
-.env.local
-.env.production
+*.env
 
-# Strapi uploads 
-backend/public/uploads
+# OS files
+.DS_Store
+Thumbs.db
+
+# Strapi specific
+**/tmp/
+**/cache/
+**/public/uploads/
+
+# VSCode
+.vscode/
