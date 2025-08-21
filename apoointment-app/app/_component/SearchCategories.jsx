@@ -29,7 +29,7 @@ export default function SearchCategories() {
                     {listOfcategories.map((c, index) => {
                         return (
                             <Link href={`/search/${c?.name}`} key={index}>
-                                <div className="flex text-center flex-col items-center bg-lime-200 p-5 m-2 rounded-lg hover:scale-110 transition-all cursor-pointer"><Image src={`http://localhost:1337${c?.icon[0]?.url}`}
+                                <div className="flex text-center flex-col items-center bg-lime-200 p-5 m-2 rounded-lg hover:scale-110 transition-all cursor-pointer"><Image src={`https://doctor-appointment-yfh5.onrender.com${c?.icon[0]?.url}`}
                                     width={70}
                                     height={70}
                                     alt={c.name} />

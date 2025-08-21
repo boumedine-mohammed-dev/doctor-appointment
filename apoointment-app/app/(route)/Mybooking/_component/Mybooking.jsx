@@ -40,7 +40,7 @@ function Mybooking({ filter }) {
                     return (
                         <div key={index} className=" block md:flex border-[1px] p-5 mt-5">
                             <div className="flex  " >
-                                <div><Image src={`http://localhost:1337${book?.doctor?.image[0]?.url}`} width={200} height={200} alt="photo" className="rounded-full w-[180px] md:w-[200px] h-[150px] mr-30" /></div>
+                                <div><Image src={`https://doctor-appointment-yfh5.onrender.com${book?.doctor?.image[0]?.url}`} width={200} height={200} alt="photo" className="rounded-full w-[180px] md:w-[200px] h-[150px] mr-30" /></div>
                                 <div className="flex flex-col justify-center" >
                                     <h2 className="mt-3 text-[13px] md:text-[16px]" ><span className="bg-lime-300 p-1 rounded-full" >Name:</span>{book?.doctor?.name}</h2>
                                     <h2 className="mt-3 text-[13px] md:text-[16px]" ><span className="bg-lime-300 p-1 rounded-full" >Address:</span>{book?.doctor?.address}</h2>

@@ -22,7 +22,7 @@ function Categoriesdoctor({ c }) {
                     <Link key={index} href={`/details/${doctor?.documentId}`}>
                         <div className="border-[1px] rounded-lg p-3 m-3">
                             <Image
-                                src={`http://localhost:1337${doctor?.image[0]?.url}`}
+                                src={`https://doctor-appointment-yfh5.onrender.com${doctor?.image[0]?.url}`}
                                 width={500}
                                 height={200}
                                 alt={doctor.name}

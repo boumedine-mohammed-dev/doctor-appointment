@@ -11,7 +11,7 @@ function DoctorDetails({ doctor }) {
                 <div>
                     {doctor?.image?.length > 0 && doctor.image[0]?.url ? (
                         <Image
-                            src={`http://localhost:1337${doctor.image[0].url}`}
+                            src={`https://doctor-appointment-yfh5.onrender.com${doctor.image[0].url}`}
                             width={600}
                             height={600}
                             alt="Doctor Image"
