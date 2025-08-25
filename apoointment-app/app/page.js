@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button"
 import Section from "./_component/Section";
 import SearchCategories from "./_component/SearchCategories";
 import Doctor from "./_component/Doctor";
-import { Resend } from 'resend';
 export default function Home() {
   return (
     <div>

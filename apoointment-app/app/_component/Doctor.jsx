@@ -4,7 +4,10 @@ import Api from "../_utils/Api";
 import Image from "next/image";
 import Link from "next/link";
 import BlogItem from "./Loading";
+import { useKindeBrowserClient } from "@kinde-oss/kinde-auth-nextjs";
+
 export default function Doctor() {
+    const { user, isAuthenticated, } = useKindeBrowserClient();
     const [Doctorslist, setDoctorslist] = useState([]);
     const getDocterlist = () => {
         Api.getDoctors().then((res) => {
@@ -14,13 +17,12 @@ export default function Doctor() {
     useEffect(() => {
         getDocterlist();
     }, [])
-    console.log(Doctorslist)
     let list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     return (
         <div className="grid grid-cols-1 md:grid-cols-3 p-3" id="explore" >
             {Doctorslist?.length > 0 ? Doctorslist.map((doctor, index) => {
                 return (
-                    <Link key={index} href={`/details/${doctor?.documentId}`}>
+                    < Link key={index} href={`${isAuthenticated ? `/details/${doctor?.documentId}` : "/"}`}>
                         <div className="border-[1px] rounded-lg p-3 m-3">
                             <Image
                                 src={`https://doctor-appointment-yfh5.onrender.com${doctor?.image[0]?.url}`}
@@ -49,7 +51,7 @@ export default function Doctor() {
                     )
                 })}
             </>}
-        </div>
+        </div >
     );
 
 }

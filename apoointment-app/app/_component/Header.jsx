@@ -21,7 +21,6 @@ export default function Header() {
     ]
     const { user, isAuthenticated, } = useKindeBrowserClient();
 
-    console.log(user);
 
     return (
         <div className="flex items-center justify-between p-3 shadow-sm">

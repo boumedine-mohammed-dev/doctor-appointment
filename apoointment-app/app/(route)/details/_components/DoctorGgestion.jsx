@@ -14,7 +14,6 @@ function Doctoruggestions() {
     let list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     const getDoctorsList = () => {
         Api.getDoctors().then(resp => {
-            console.log("doctors", resp.data.data)
             setDoctorList(resp.data.data)
         })
     }

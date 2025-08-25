@@ -16,7 +16,7 @@ export default function SearchCategories() {
     useEffect(() => {
         getCategorylist()
     }, [])
-    console.log(listOfcategories)
+
     return (
         <div className="flex items-center mb-10 flex-col"  >
             <h2 className="font-bold text-4xl mb-7 ">Search <span className="text-lime-600">Categories</span></h2>
