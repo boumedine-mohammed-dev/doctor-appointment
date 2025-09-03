@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 export default function Section() {
     return (
         <div>
@@ -16,7 +17,7 @@ export default function Section() {
                                     anywhere.Access quality healthcare from the comfort of your home.
                                 </p>
                             </div>
-                            <div className="py-10"><Button>Explore Now</Button>
+                            <div className="py-10"><Link href={"#doctor"} ><Button>Explore Now</Button></Link>
                             </div>
 
                         </div>

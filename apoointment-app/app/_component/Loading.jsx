@@ -6,7 +6,7 @@ const BlogItem = props => (
     <ContentLoader
         viewBox="0 0 500 280"
         height={280}
-        width={500}
+        width={360}
         uniqueKey="blog-item-loader"
         {...props}
     >

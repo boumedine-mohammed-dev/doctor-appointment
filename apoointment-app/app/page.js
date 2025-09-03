@@ -9,7 +9,8 @@ export default function Home() {
     <div>
       <Section />
       <SearchCategories />
-      <Doctor />
+      <div id="doctor"><Doctor /></div>
+
     </div>
   );
 }
