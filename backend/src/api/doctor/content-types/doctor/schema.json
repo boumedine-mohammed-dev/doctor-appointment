@@ -15,10 +15,7 @@
       "type": "string"
     },
     "address": {
-      "type": "text"
-    },
-    "year_of_experience": {
-      "type": "integer"
+      "type": "string"
     },
     "about": {
       "type": "string"
@@ -41,6 +38,9 @@
       "relation": "manyToOne",
       "target": "api::category.category",
       "inversedBy": "doctors"
+    },
+    "year_of_experience": {
+      "type": "integer"
     },
     "appointments": {
       "type": "relation",

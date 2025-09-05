@@ -10,6 +10,7 @@ export default function SearchCategories() {
     const getCategorylist = () => {
         Api.getCategory().then((res) => {
             setlistOfcategories(res.data.data)
+            console.log("==========", res.data.data)
 
         })
     }
@@ -27,12 +28,14 @@ export default function SearchCategories() {
             <div>
                 <div className="grid md:grid-cols-3 sm:grid-cols-1 mt-10">
                     {listOfcategories.map((c, index) => {
+                        console.log("==========",)
                         return (
                             <Link href={`/search/${c?.name}`} key={index}>
-                                <div className="flex text-center flex-col items-center bg-lime-200 p-5 m-2 rounded-lg hover:scale-110 transition-all cursor-pointer"><Image src={`https://doctor-appointment-yfh5.onrender.com${c?.icon[0]?.url}`}
-                                    width={70}
-                                    height={70}
-                                    alt={c.name} />
+                                <div className="flex text-center flex-col items-center bg-lime-200 p-5 m-2 rounded-lg hover:scale-110 transition-all cursor-pointer">
+                                    <Image src={`https://doctor-appointment-yfh5.onrender.com${c?.icon[0]?.url}`}
+                                        width={70}
+                                        height={70}
+                                        alt={c.name} />
                                     <label>{c.name}</label>
                                 </div>
                             </Link>

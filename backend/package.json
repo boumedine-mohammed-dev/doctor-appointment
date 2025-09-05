@@ -1,5 +1,5 @@
 {
-  "name": "doctor-appointment",
+  "name": "backend",
   "version": "0.1.0",
   "private": true,
   "description": "A Strapi application",
@@ -9,30 +9,28 @@
     "deploy": "strapi deploy",
     "dev": "strapi develop",
     "develop": "strapi develop",
-    "seed:example": "node ./scripts/seed.js",
     "start": "strapi start",
     "strapi": "strapi",
     "upgrade": "npx @strapi/upgrade latest",
     "upgrade:dry": "npx @strapi/upgrade latest --dry"
   },
   "dependencies": {
-    "@strapi/plugin-cloud": "5.20.0",
-    "@strapi/plugin-users-permissions": "5.20.0",
-    "@strapi/strapi": "5.20.0",
-    "fs-extra": "^10.0.0",
-    "mime-types": "^2.1.27",
+    "@strapi/plugin-cloud": "5.23.3",
+    "@strapi/plugin-users-permissions": "5.23.3",
+    "@strapi/strapi": "5.23.3",
     "pg": "8.8.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
     "styled-components": "^6.0.0"
   },
+  "devDependencies": {},
   "engines": {
-    "node": ">=20.0.0 <=22.x.x",
-    "npm": ">=9.0.0"
+    "node": ">=18.0.0 <=22.x.x",
+    "npm": ">=6.0.0"
   },
   "strapi": {
-    "uuid": "0582ad1f-21a1-4f48-95e6-b49935cca30d",
-    "installId": "a8335416c5689a9672e85cbb9b186d208d7403bc57e7db906c57d584a86857e5"
+    "uuid": "1d76f3e0-b139-4f43-8650-42f90b5e178b",
+    "installId": "4de17cfb4ddc616ae4f84ee04055f20d9515fecaa5d3594f5bca8e4259c823eb"
   }
 }
