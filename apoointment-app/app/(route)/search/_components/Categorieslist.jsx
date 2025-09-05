@@ -34,7 +34,7 @@ function Categorieslist() {
 
                             <CommandItem key={index} >
                                 <Link className='mt-3 cursor-pointer flex gap-3' href={`/search/${c.name}`}>
-                                    <Image src={`https://doctor-appointment-yfh5.onrender.com${c?.icon[0]?.url}`}
+                                    <Image src={`https://doctor-appointment-12ox.onrender.com${c?.icon[0]?.url}`}
                                         width={30}
                                         height={30}
                                         alt={c.name} />

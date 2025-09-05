@@ -28,7 +28,7 @@ function Doctoruggestions() {
                 {doctorList.length > 0 ? doctorList.slice(0, 5).map((doctor, index) => (
                     <Link key={index} href={`/details/${doctor?.documentId}`}>
                         <div className='border-[1px] rounded-lg p-3 m-3 flex '>
-                            <Image src={`https://doctor-appointment-yfh5.onrender.com${doctor?.image[0]?.url}`}
+                            <Image src={`https://doctor-appointment-12ox.onrender.com${doctor?.image[0]?.url}`}
                                 alt='photo'
 
                                 width={150}

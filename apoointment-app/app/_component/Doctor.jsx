@@ -25,7 +25,7 @@ export default function Doctor() {
                     < Link key={index} href={`${isAuthenticated ? `/details/${doctor?.documentId}` : "/"}`}>
                         <div className="border-[1px] rounded-lg p-3 m-3">
                             <Image
-                                src={`https://doctor-appointment-yfh5.onrender.com${doctor?.image[0]?.url}`}
+                                src={`https://doctor-appointment-12ox.onrender.com${doctor?.image[0]?.url}`}
                                 width={500}
                                 height={200}
                                 alt={doctor.name}

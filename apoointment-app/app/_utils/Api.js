@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosGlobal = axios.create({
-    baseURL: "https://doctor-appointment-yfh5.onrender.com/api"
+    baseURL: "https://doctor-appointment-12ox.onrender.com/api"
 });
 
 const getCategory = () => axiosGlobal.get("/categories?populate=*");
